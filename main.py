@@ -5,6 +5,9 @@ from portfolio import Portfolio
 from utils import clean_text
 from streamlit_app import streamlit_app
 import streamlit as st
+import os 
+
+port = int(os.environ.get("PORT", 8501))
 
 if __name__ == "__main__":
     chain = Chain()
